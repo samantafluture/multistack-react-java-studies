@@ -1,4 +1,4 @@
-package br.com.treinaweb.semana2;
+package br.com.treinaweb;
 
 public class OperadoresLogicos {
     public static void main(String[] args) {

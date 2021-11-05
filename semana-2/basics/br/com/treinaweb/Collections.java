@@ -1,4 +1,4 @@
-package br.com.treinaweb.semana2;
+package br.com.treinaweb;
 
 import java.util.ArrayList;
 import java.util.HashMap;
