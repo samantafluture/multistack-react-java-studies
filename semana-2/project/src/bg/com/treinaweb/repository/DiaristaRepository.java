@@ -12,6 +12,7 @@ public class DiaristaRepository implements IRepository<Diarista, Long> {
 
     public DiaristaRepository() {
         diaristas = new ArrayList<Diarista>(); // inicializar a lista
+        // diaristas.add(new Diarista(1L, "Maria", "1290192", "9989-9474", "Av. Paulista, 1000"));
         idAtual = 1L; // meu id começa com 1
     }
 
