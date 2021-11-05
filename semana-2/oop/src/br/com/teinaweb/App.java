@@ -14,11 +14,20 @@ public class App {
         atendimento.setHoras(5);
         diarista.depositar(100);
         cliente.depositar(100);
+        diarista.transferir(cliente, 13);
+        cliente.transferir(diarista, 25.5);
 
         System.out.println("Nome: " + diarista.getNome() + "\nTelefone: " + diarista.getTelefone() + "\nEndereço: " + diarista.getEndereco() + "\nChavePix: " + diarista.getChavePix() + "\nSaldo: " + diarista.getSaldo());
 
         System.out.println("Nome: " + cliente.getNome() + "\nTelefone: " + cliente.getTelefone() + "\nEndereço: " + cliente.getEndereco() + "\nSaldo: " + cliente.getSaldo());
 
         System.out.println("Horas: " + atendimento.getHoras());
-    }
+
+        System.out.println(cliente); // imprimindo o toString do cliente
+        System.out.println(diarista);  // imprimindo o toString da diarista
+
+        var diarista2 = new Diarista("nome", "telefone", "endereco", "123");
+        var diarista3 = new Diarista ("nome", "telefone", "endereco", "123");
+        System.out.println(diarista2.equals(diarista3)); // imprimindo o equals da diarista
+    } 
 }

@@ -21,4 +21,10 @@ public class Cliente extends Pessoa{
 
         this.setSaldo(saldoNovo);
     }
+
+    // representação em String do objeto
+    @Override
+    public String toString() {
+        return "Cliente: " + this.getNome();
+    }
 }
