@@ -29,5 +29,16 @@ public class App {
         var diarista2 = new Diarista("nome", "telefone", "endereco", "123");
         var diarista3 = new Diarista ("nome", "telefone", "endereco", "123");
         System.out.println(diarista2.equals(diarista3)); // imprimindo o equals da diarista
+
+        var atendimento2 = new Atendimento();
+        atendimento2.setHoras(5);
+        atendimento2.setData("01/01/2022");
+        atendimento2.setCliente(cliente);
+        atendimento2.setDiarista(diarista);
+
+        System.out.println(atendimento2.getHoras());
+        System.out.println(atendimento2.getData());
+        System.out.println(atendimento2.getCliente().getNome());
+        System.out.println(atendimento2.getDiarista().getNome());
     } 
 }

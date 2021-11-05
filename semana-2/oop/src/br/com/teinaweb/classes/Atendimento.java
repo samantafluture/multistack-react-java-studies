@@ -1,7 +1,10 @@
 package br.com.teinaweb.classes;
 
 public class Atendimento {
+    private String data;
     private int horas;
+    private Cliente cliente;
+    private Diarista diarista;
 
     public int getHoras() {
         return horas;
@@ -13,5 +16,29 @@ public class Atendimento {
         } else {
             this.horas = horas;
         }
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Diarista getDiarista() {
+        return diarista;
+    }
+
+    public void setDiarista(Diarista diarista) {
+        this.diarista = diarista;
     }
 }
